@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+    background-color:brown;
+}
+
+.clock{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(39, 48, 27);
+    border-radius:20%;
+    left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   margin:auto;
+   box-shadow: 0px 0px 10px rgb(39, 48, 27);
+   }
+.hour{
+    position: absolute;
+    height: 120px;
+    width: 13px;
+   background-color:yellowgreen;
+   left: 57em;
+   top: 50%;
+
+
+   border-radius: 4px;
+   animation: hourNeedle 60s infinite;
+   transform-origin: top center;
+   animation-timing-function: linear;
+ 
+}
+@keyframes hourNeedle{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.minute{
+    position:absolute;
+    height: 140px;
+    width: 10px;
+    background-color:yellowgreen;
+    border-radius: 4px;
+    left: 57em;
+    top: 50%;
+animation: minuteNeedle 6s infinite;
+transform-origin: top center;
+animation-timing-function: linear;
+
+
+}
+@keyframes minuteNeedle{
+    from{transform: rotate(0deg);}
+    to{transform:rotate(360deg) ;}
+}
+.circle{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color:rgb(133, 77, 170);
+    border-radius: 100%;
+    top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+}
+
+#twelve{
+    position: absolute;
+    color: rgb(133, 77, 170);
+    font-size: 50px;
+    margin: 50%;
+    top : -635px;
+    right: -25px;
+
+}
+#six{
+    position:absolute;
+    color: rgb(133, 77, 170);
+    font-size:60px ;
+    margin: 50%;
+    top: -300px;
+    right: -15px;
+}
+#three{
+    position: absolute;
+    color: rgb(133, 77, 170);
+    font-size: 60px;
+   
+    margin: auto;
+    left: 58%;
+    bottom: 48%;
+
+}
+#nine{
+    position: absolute;
+    color: rgb(133, 77, 170);
+    font-size: 60px;
+    left: 40%;
+    bottom: 48%;
+}
